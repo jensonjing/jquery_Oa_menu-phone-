@@ -1,0 +1,134 @@
+body{
+    /* overflow-x: hidden; */
+    width:100%;
+}
+
+.main-sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    min-height: 100%;
+    width: 30%;
+    z-index: 810;
+    background-color: #222d32;
+}
+
+.sidebar{
+    padding-bottom: 0.2rem;
+    background-color: #222d32;
+}
+
+.sidebar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #222d32;
+}
+
+.sidebar-menu>li {
+    position: relative;
+    margin: 0;
+    padding: 0
+}
+
+.sidebar-menu>li>a {
+    padding: 0.12rem 0.05rem 0.12rem 0.15rem;
+    display: block;
+    border-left: 0.03rem solid transparent;
+    color: #b8c7ce;
+    font-size:12px;
+}
+
+.sidebar-menu>li>a>.fa {
+    width: 0.2rem;
+}
+
+.sidebar-menu>li:hover>a, .sidebar-menu>li.active>a {
+    color: #fff;
+    background: #1e282c;
+    border-left-color: #3c8dbc
+}
+
+.sidebar-menu>li>.treeview-menu {
+    margin: 0 0.01rem;
+    background: #2c3b41
+}
+
+.sidebar-menu>li .label, .sidebar-menu>li .badge {
+    margin-top: 0.03rem;
+    margin-right: 0.05rem
+}
+
+.sidebar-menu li.header {
+    padding: 0.10rem 0.25rem 0.1rem 0.15rem;
+    font-size: .12rem;
+    color: #4b646f;
+    background: #1a2226
+}
+
+.sidebar-menu li>a>.fa-angle-left {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin-right: .1rem;
+    margin-top: .03rem;
+}
+
+.sidebar-menu li.active>a>.fa-angle-left {
+    transform: rotate(-90deg)
+}
+
+.sidebar-menu li.active>.treeview-menu {
+    display: block
+}
+
+.sidebar-menu a {
+    color: #b8c7ce;
+    text-decoration: none
+}
+
+.sidebar-menu .treeview-menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-left: .05rem
+}
+
+.sidebar-menu .treeview-menu .treeview-menu {
+    padding-left: .1rem;
+}
+
+.sidebar-menu .treeview-menu>li {
+    margin: 0
+}
+
+.sidebar-menu .treeview-menu>li>a {
+    padding: .04rem .04rem .04rem .15rem;
+    display: block;
+    font-size: .14rem;
+    color: #8aa4af
+}
+
+.sidebar-menu .treeview-menu>li>a>.fa {
+    width: .15rem;
+}
+
+.sidebar-menu .treeview-menu>li>a>.fa-angle-left, .sidebar-menu .treeview-menu>li>a>.fa-angle-down {
+    width: auto
+}
+
+.sidebar-menu .treeview-menu>li.active>a, .sidebar-menu .treeview-menu>li>a:hover {
+    color: #fff
+}
+/*右侧*/
+#right_content{
+    position: absolute;
+    width:70%;
+    padding-left:.1rem;
+    min-height: 5rem;
+    top: 0;
+    margin-left:30%;
+    overflow-x: auto;
+}
